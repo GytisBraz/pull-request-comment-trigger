@@ -4,6 +4,7 @@ const core = require("@actions/core");
 const { context, GitHub } = require("@actions/github");
 
 async function run() {
+    console.log("Testing this workflow!")
     const trigger = core.getInput("trigger", { required: true });
 
     const reaction = core.getInput("reaction");
